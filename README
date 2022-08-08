@@ -1,0 +1,97 @@
+# Frontend Mentor - Four card feature section solution
+
+This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
+## Overview
+
+### The challenge
+
+To build a four card feature section from the Frontend Mentor free challenge collection.
+### Screenshot
+
+[https://github.com/Kitty10206/frontend-mentor/blob/main/Four%20card%20feature%20section%20mobile.png]
+[https://github.com/Kitty10206/frontend-mentor/blob/main/Four%20card%20feature%20section%20desktop.png]
+
+### Links
+
+- Solution URL: [https://codepen.io/HannahWillis/full/PoRergN
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- Codepen and stubbornness
+
+
+### What I learned
+
+```html 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+I learned I had to add this tag in my <head> section to make the @media queries work. Not sure they did, though.
+
+```css
+@media screen and (max-width: 1800px) and (min-width: 400px) {
+  .container {
+    display: grid;
+    grid-template-columns: 380px 380px 380px, minmax(320px);
+    grid-template-rows: 142px 128px 30px 128px 142px;
+    grid-template-areas:
+      ". team-builder ."
+      "supervisor team-builder calculator"
+      "supervisor . calculator"
+      "supervisor karma calculator"
+      ". karma .";
+    column-gap: 0px;
+    justify-content: center;
+  }}
+```
+I learned how to use CSS grids, and did some fun maths to work out how big each grid had to be to allow the tiles to be the right size and placement.
+I also experimented with media queries but I'm not sure it worked properly.
+
+I didn't use and JS or Bootstrap because I don't know how to yet.
+
+### Continued development
+
+I really really need to get a handle on @media queries. 
+I often forget whether to use "#" or "." when referencing class or id in CSS. **For class, I have to use "." and for id I have to use "#".**
+I'd like to practice using flexbox and grids more, because it always feels like trial and error.
+I need to get better at estimating how long things will take me, because I thought this would take me an evening but actually I had to keep working on it on the train (codepen sucks on mobile) and tweak further when I got home. Overall this probably took me 8 hours give or take, and I thought it'd take more like 4 hours. Practice makes perfect though.
+I never did work out how to make the bevelled corners without the top border warping to the bevel shape.
+I need to learn how to use GitHub.....
+
+### Useful resources
+
+- [CSS Tricks Flexbox guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - This helped me understand how to use flexboxes, although they didn't quite do what I wanted.
+- [CSS Tricks Grids guide](https://css-tricks.com/snippets/css/complete-guide-grid/) - This helped me finally understand how grids work, and came in super handy when I was learning how to build a grid.
+- Honourable mentions: (https://www.w3schools.com/css/css3_flexbox_container.asp), (https://www.w3schools.com/cssref/css3_pr_box-shadow.asp), (https://www.w3schools.com/css/css_rwd_mediaqueries.asp), (https://www.quora.com/Is-there-any-reason-to-use-CSS-media-queries-with-Flexbox-or-grids-If-so-when-or-why)
+
+
+## Author
+
+- Codepen - [Hannah Willis](https://codepen.io/HannahWillis)
+- Frontend Mentor - [@Kitty10206](https://www.frontendmentor.io/profile/Kitty10206)
+
+
+## Acknowledgments
+
+I yoinked links for the images from (https://github.com/ForlaniS/Four-card-feature-section/blob/master/icon-calculator.svg) because I still don't know how to put images on github myself. So, thank you ForlaniS!
