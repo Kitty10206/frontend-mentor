@@ -1,0 +1,157 @@
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+body {
+  padding: 5%;
+  font-family: Poppins;
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --verydarkblue: hsl(234, 12%, 34%);
+  --greyishblue: hsl(229, 6%, 66%);
+  --verylightgrey: hsl(0, 0%, 98%);
+  background: var(--verylightgrey);
+}
+h1,
+h2,
+h4 {
+  text-align: center;
+}
+h1 {
+  font-weight: 200;
+  color: var(--verydarkblue);
+}
+h2 {
+  font-weight: 600;
+  color: var(--verydarkblue);
+  margin-top: -25px;
+}
+h3 {
+  font-weight: 600;
+  color: var(--verydarkblue);
+  margin: 23px 0px -20px 28px;
+}
+h4 {
+  font-weight: 400;
+  color: var(--greyishblue);
+  text-align: center;
+  margin-bottom: 70px;
+}
+p {
+  font-size: 15px;
+  color: var(--greyishblue);
+  margin: 28px;
+}
+.box {
+  box-shadow: 0px 8px 20px hsla(234, 12%, 34%, 0.3);
+  border-radius: 8px;
+  height: 220px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+#supervisor-box {
+  border-style: solid none none none;
+  border-width: 4px;
+  border-color: var(--cyan);
+  grid-area: supervisor;
+}
+#team-builder-box {
+  border-style: solid none none none;
+  border-width: 4px;
+  border-color: var(--red);
+  grid-area: team-builder;
+}
+#karma-box {
+  border-style: solid none none none;
+  border-width: 4px;
+  border-color: var(--orange);
+  grid-area: karma;
+}
+#calculator-box {
+  border-style: solid none none none;
+  border-width: 4px;
+  border-color: var(--blue);
+  grid-area: calculator;
+}
+.icon {
+  padding: 0px 30px 20px 30px;
+}
+@media and screens (max-width: 375px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 25px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1800px) and (min-width: 400px) {
+  .container {
+    display: grid;
+    grid-template-columns: 380px 380px 380px, minmax(320px);
+    grid-template-rows: 142px 128px 30px 128px 142px;
+    grid-template-areas:
+      ". team-builder ."
+      "supervisor team-builder calculator"
+      "supervisor . calculator"
+      "supervisor karma calculator"
+      ". karma .";
+    column-gap: 0px;
+    justify-content: center;
+  }
+  .box {
+    margin: 20px;
+    height: 250px;
+    width: 380px;
+  }
+  #header {
+    justify: center;
+    content-width: 30%;
+  }
+  .icon {
+    padding: 20px 30px 20px 30px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 36.8px;
+  }
+}
+</style>
+<body>
+  <section id="header">
+    <div id="title-header">
+      <h1 id="title-1">Reliable, efficient delivery</h1>
+      <h2 id="title-2">Powered by Technology</h2>
+      <h4 id="subtitle">Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</h4>
+    </div>
+  </section>
+  <section id="boxes">
+    <div class="container">
+      <div id="supervisor-box" class="box">
+        <h3 class="box-headers">Supervisor</h3>
+        <p class="box-subtitle">Monitors activity to identify project roadblocks</p>
+        <img class="icon" style="float: right;" src="https://raw.githubusercontent.com/ForlaniS/Four-card-feature-section/d7d7a41575fb2924fa3d9a0a71d2233ee672d949/icon-supervisor.svg" alt="Magnifying glass" />
+      </div>
+      <div id="team-builder-box" class="box">
+        <h3 class="box-headers">Team Builder</h3>
+        <p class="box-subtitle">Scans our talent network to create the optimal team for your project</p>
+        <img class="icon" style="float: right;" src="https://raw.githubusercontent.com/ForlaniS/Four-card-feature-section/d7d7a41575fb2924fa3d9a0a71d2233ee672d949/icon-team-builder.svg" alt="Red house" />
+      </div>
+      <div id="karma-box" class="box">
+        <h3 id="box-headers">Karma</h3>
+        <p class="box-subtitle">Regularly evaluates our talent to ensure quality</p>
+        <img class="icon" style="float: right;" src="https://raw.githubusercontent.com/ForlaniS/Four-card-feature-section/d7d7a41575fb2924fa3d9a0a71d2233ee672d949/icon-karma.svg" alt="Light bulb" />
+      </div>
+      <div id="calculator-box" class="box">
+        <h3 class="box-headers">Calculator</h3>
+        <p class="box-subtitle">Uses data from past projects to provide better delivery estimates</p>
+        <img class="icon" style="float: right;" src="https://raw.githubusercontent.com/ForlaniS/Four-card-feature-section/d7d7a41575fb2924fa3d9a0a71d2233ee672d949/icon-calculator.svg" alt="computer" />
+      </div>
+    </div>
+  </section>
+  
+  
