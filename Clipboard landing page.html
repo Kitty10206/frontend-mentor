@@ -1,0 +1,420 @@
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet"></head>
+<style>
+/*https://github.com/Kitty10206/frontend-mentor/blob/Clipboard-landing-page/bg-header-mobile.png?raw=true*/
+body {
+  --strongcyan: hsl(171, 66%, 44%);
+  --lightblue: hsl(233, 100%, 69%);
+  --darkgreyishblue: hsl(210, 10%, 33%);
+  --greyishblue: hsl(201, 11%, 66%);
+  text-align: center;
+  background: url(https://github.com/Kitty10206/frontend-mentor/blob/Clipboard-landing-page/bg-header-mobile.png?raw=true) top;
+  background-repeat: no-repeat;
+  background-size: contain; 
+}
+h1, h2, h3 {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: 600px,
+}
+h4, p, h5 {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: 400px;
+}
+h1, h2, h3, h5 {
+  color: var(--darkgreyishblue);
+}
+p {
+  color: var(--greyishblue);
+  line-height: 25px;
+  font-size: 16px;
+}
+h4 {
+  margin: 14px;
+}
+h5 {
+  font-size: 18px;
+}
+/*div spacing*/
+#copy-history-div {
+  margin-bottom: 30px;
+  padding: 13px;
+}
+#keep-track {
+  margin-top: 150px;
+  padding: 13px;
+  /*margin-bottom: 30px;*/
+}
+#access-anywhere {
+  margin-top: 150px;
+  padding: 13px;
+  /*margin-bottom: 30px;*/
+}
+#supercharge {
+  margin-top: 30px;
+  padding: 13px;
+  margin-bottom: 30px;
+}
+#supercharge h2, #access-anywhere h2 {
+  padding: 0px 10px 0px 10px;
+}
+#download h2 {
+  padding: 0px 30px 0px 30px;
+}
+#supercharge p {
+  margin-bottom: 50px;
+}
+#download {
+  margin-top: 100px;
+  padding: 13px;
+  margin-bottom: 150px;
+}
+ul {
+  list-style: none;
+  padding: 0px;}
+li {
+  margin-top: 50px;
+}
+footer {
+  background-color: hsla(201, 11%, 66%, 0.1);
+  width: 100%;
+  height: auto;
+  position: absolute;
+  margin-left: -8px; /*for some reason this fixed my footer having white round the edges*/
+  padding-bottom: 30px;
+}
+/*image sizing*/
+#clipboard-logo {
+  padding: 120px 0px 40px 0px;
+}
+#computer-image, #devices {
+  width: 100%;
+  height: auto;
+  padding: 50px 0px 0px 0px;
+}
+.icons {
+  padding-bottom: 20px;
+}
+.logos {
+  width: 40%;
+  height: auto;
+  margin: 30px;
+}
+#clipboard-logo-footer {
+  width: 40%;
+  height: auto;
+  padding-top: 50px;
+  margin: auto;
+}
+.socials-icon {
+  margin: 10px 20px 10px 20px;
+  cursor: pointer;
+}
+/*button styling*/
+.ios-button {
+  background-color: var(--strongcyan);
+  border: solid 3px #2F9683;
+  border-style: none none solid none;
+  color: white;  
+  width: 85%;
+  border-radius: 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0px;
+  cursor: pointer;
+  box-shadow: 0px 8px 30px hsla(171, 66%, 44%, 0.5);
+}
+.ios-button:hover {
+  background-color: hsla(171, 66%, 44%, 0.7);
+  border-color: hsl(171, 66%, 44%, 0.9);
+}
+.mac-button {
+  background-color: var(--lightblue);
+  border: solid 3px #4E5DBC;
+  border-style: none none solid none;
+  color: white;  
+  width: 85%;
+  border-radius: 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 0px;
+  cursor: pointer;
+  box-shadow: 0px 8px 30px hsla(233, 100%, 69%, 0.5);
+}
+.mac-button:hover {
+  background-color: hsla(233, 100%, 69%, 0.8);
+  border-color: hsla(233, 100%, 69%, 0.9);
+}
+
+  #footer h5{
+    cursor: pointer;
+  }
+  #footer h5:hover {
+    color: var(--strongcyan);
+  }
+
+@media screen and (min-width: 500px) {
+  body {
+    background: url(https://github.com/Kitty10206/frontend-mentor/blob/Clipboard-landing-page/bg-header-desktop.png?raw=true) top;
+  background-repeat: no-repeat;
+  background-size: contain; 
+  }
+  /*button styling*/
+
+.ios-button {
+  background-color: var(--strongcyan);
+  border: solid 3px #2F9683;
+  border-style: none none solid none;
+  color: white;  
+  width: 25%;
+  border-radius: 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px 8px;
+  cursor: pointer;
+  box-shadow: 0px 8px 30px hsla(171, 66%, 44%, 0.5);
+}
+.mac-button {
+  background-color: var(--lightblue);
+  border: solid 3px #4E5DBC;
+  border-style: none none solid none;
+  color: white;  
+  width: 25%;
+  border-radius: 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px 8px;
+  cursor: pointer;
+  box-shadow: 0px 8px 30px hsla(233, 100%, 69%, 0.5);
+}
+  h1{
+    font-size: 43.5px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .header-subtitle {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .subheader-subtitle{
+    font-size: 19px;
+    line-height: 31px;
+  }
+  #copy-history{
+ margin: 0% 25% 0% 25%;
+  }
+  #download {
+ margin: 0% 25% 100px 25%;
+  }
+  #download-text {
+    padding-bottom: 50px;
+  }
+  #keep-track-text{
+    margin: 0% 26% 0% 26%;
+  }
+  #computer-image{
+    width: 54%;
+    height: auto;    
+    margin-left: -55px;
+    float: left;   
+  } 
+  ul{
+    width: 25%;
+    float: right;
+    margin-right: 260px;
+    text-align: left;
+    margin-top: 50px;
+    }
+  #access-anywhere{
+    margin: 0% 26% 0% 26%;
+    padding-top: 800px;
+    width: 50%;
+  }
+  #three-points{
+    width: 80%;
+    display: grid;
+    padding-top: 50px;
+    margin-left: 12%;
+    grid-template-columns: [before] auto [first] auto [second] auto [third] auto [last] auto [after];
+    grid-template-rows: auto;
+    column-gap:25px;
+    grid-template-areas: ". blacklists snippets sneak-preview .";
+      margin-bottom: 130px;
+}
+  .icons {
+    height: 40px;
+  padding-bottom: 20px;
+}
+  #logos {
+    width: 86%;
+    margin-left: 7%;
+    padding-bottom: 130px;
+  }
+  .logos {
+    width: 12%;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: auto;
+    vertical-align: middle;
+  }
+  #socials{ 
+    width: 20px;
+    height: auto;
+  margin: 10px;
+    vertical-align: middle;
+    grid-area: socials;
+    grid-column: sixth;
+    grid-row: row1 span 2;    
+  }
+  #socials-internal{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 30px;
+    margin-top: 30px;
+    }
+  #clipboard-logo-footer {
+    width: 60px;
+    height: auto;
+    grid-area: logo;
+    grid-column: first;
+    grid-row: row1 span 2;
+    margin-top: -100px;
+    margin-left: 30px;
+  }
+  #faqs {
+    grid-area: faqs;
+    grid-column: second;
+    grid-row: row1;
+  }
+
+  #contact {
+    grid-area: contact;
+    grid-column: second;
+    grid-row: row2;
+  }
+  #privacy {
+    grid-area: privacy;
+    grid-column: third;
+    grid-row: row1;
+  }
+  #press {
+    grid-area: press;
+    grid-column: third;
+    grid-row: row2;
+  }
+  #install {
+    grid-area: install;
+    grid-column: fourth;
+    grid-row: row1;
+  }
+  #footer {
+    text-align: left;
+    display: grid;
+    grid-template-columns: [before] 50px [first] 1fr [second] 1fr [third] 1fr [fourth] 1fr [fifth] 1fr [sixth] 15% [last] 50px [after];
+    grid-template-rows: [row1] 50px [row2] 50px [row3] 30px [last];
+grid-template-areas: ". clipboard-logo-footer faqs privacy install . socials ."
+  ". clipboard-logo-footer contact press . . socials ." 
+  ". . . . . . . .";
+  }
+
+  
+}
+</style>
+<body>
+<section id="copy-history">
+  <div id="copy-history-div">
+    <img src='https://raw.githubusercontent.com/Kitty10206/frontend-mentor/3f8dd98cd344e393de0a1464a99483cb50eb3cf7/logo.svg' id="clipboard-logo" alt="Clipboard Logo">
+  <h1>A history of everything you copy</h1>
+  <p class="header-subtitle">Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p></div>
+  <div class="buttons"><button class="ios-button"><h4>Download for iOS</h4></button>
+    <button class="mac-button"><h4>Download for Mac</h4></button></div></section>
+  <section id="keep-track">
+  <div id="keep-track-text">
+    <h2>Keep track of your snippets</h2>
+      <p class="subheader-subtitle">Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.</p>
+    </div>
+    <div><img src='https://github.com/Kitty10206/frontend-mentor/blob/Clipboard-landing-page/image-computer.png?raw=true' id="computer-image" alt="Image of a computer with Clipboard installed"> </div><div><ul>
+    <li><h3>Quick Search</h3>
+    <p>Easily search your snippets by content, category, web address, application, and more.</p></li>
+    <li><h3>iCloud Sync</h3>
+    <p>Instantly saves and syncs snippets across all your devices.</p><li>
+      <h3>Complete History</h3>
+      <p>Retrieve any snippets from the first moment you started using the app.</p></li></ul></div>
+    </section>
+<section id="access-anywhere">
+  <div>
+    <h2>Access Clipboard Anywhere</h2>
+    <p class="header-subtitle">Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
+    <div><img src='https://github.com/Kitty10206/frontend-mentor/blob/Clipboard-landing-page/image-devices.png?raw=true' id="devices" alt='Clipboard installed on a tablet and a mobile device'></div>
+      
+    </div></section>
+<section id="supercharge">
+  <div>
+    <h2>Supercharge your workflow</h2>
+    <p class="subheader-subtitle">We’ve got the tools to boost your productivity.</p></div>
+  <div id="three-points">
+    <div id="blacklists" class="three-points"><img src='https://raw.githubusercontent.com/Kitty10206/frontend-mentor/3f8dd98cd344e393de0a1464a99483cb50eb3cf7/icon-blacklist.svg' class="icons"><h3>Create blacklists</h3>
+      <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p></div>
+    <div id="snippets" class="three-points"><img src='https://raw.githubusercontent.com/Kitty10206/frontend-mentor/3f8dd98cd344e393de0a1464a99483cb50eb3cf7/icon-text.svg' class="icons"><h3>Plain text snippets</h3>
+      <p>Remove unwanted formatting from copied text for a consistent look.</p></div>
+    <div id="sneak-preview" class="three-points"><img src='https://raw.githubusercontent.com/Kitty10206/frontend-mentor/3f8dd98cd344e393de0a1464a99483cb50eb3cf7/icon-preview.svg' class="icons"><h3>Sneak preview</h3>
+      <p>Quick preview of all snippets on your Clipboard for easy access.</p></div></section>
+  <section id="logos">
+    <img src='https://github.com/Kitty10206/frontend-mentor/blob/Clipboard-landing-page/logo-google.png?raw=true' class="logos" alt="Google logo">
+    <img src='https://github.com/Kitty10206/frontend-mentor/blob/Clipboard-landing-page/logo-ibm.png?raw=true' class="logos" alt="IBM logo">
+    <img src='https://github.com/Kitty10206/frontend-mentor/blob/Clipboard-landing-page/logo-microsoft.png?raw=true' class="logos" alt="Microsoft logo">
+    <img src='https://github.com/Kitty10206/frontend-mentor/blob/Clipboard-landing-page/logo-hp.png?raw=true' class="logos" alt="Hewlett Packard Enterprise logo">
+    <img src='https://github.com/Kitty10206/frontend-mentor/blob/Clipboard-landing-page/logo-vector-graphics.png?raw=true' class="logos" alt="Vector Graphics logo">
+  </section>
+  <section id="download">
+    <div>
+    <div id="download-text"><h2>Clipboard for iOS and Mac OS</h2>
+      <p class="subheader-subtitle">Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</p></div><div class="buttons">
+      <button class="ios-button"><h4>Download for iOS</h4></button>
+      <button class="mac-button"><h4>Download for Mac</h4></button></div>
+      </div></section>
+
+    <footer>
+      <div id="footer">
+        <div id="clipboard-logo-footer">
+        <img src='https://raw.githubusercontent.com/Kitty10206/frontend-mentor/3f8dd98cd344e393de0a1464a99483cb50eb3cf7/logo.svg' id="clipboard-logo-footer" alt="Clipboard Logo"></div>      
+        <div id="faqs"><h5>FAQs</h5></div>
+        <div id="contact"><h5>Contact Us</h5></div>
+        <div id="privacy"><h5>Privacy Policy</h5></div>
+        <div id="press"><h5>Press Kit</h5></div>
+      <div id="install"><h5>Install Guide</h5></div>
+      
+      <div id="socials"><div id="socials-internal">
+        <img src='https://raw.githubusercontent.com/Kitty10206/frontend-mentor/3f8dd98cd344e393de0a1464a99483cb50eb3cf7/icon-facebook.svg' class="socials-icon" id="fb-logo">
+        <img src='https://raw.githubusercontent.com/Kitty10206/frontend-mentor/3f8dd98cd344e393de0a1464a99483cb50eb3cf7/icon-twitter.svg' class="socials-icon" id="twitter-logo">
+        <img src='https://raw.githubusercontent.com/Kitty10206/frontend-mentor/3f8dd98cd344e393de0a1464a99483cb50eb3cf7/icon-instagram.svg' class="socials-icon" id="instagram-logo">
+        </div>  </div>
+        
+<!--<div id="socials"><div id="socials-internal">
+<div class="socials-icon" id="fb-logo"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z" fill="#4C545C" fill-rule="nonzero"/></svg>
+      <div class="socials-icon" id="twitter-logo"><svg width="24" height="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z" fill="#4C545C" fill-rule="nonzero"/></svg></div>
+<div class="socials-icon" id="instagram-logo"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" fill="#4C545C" fill-rule="nonzero"/></svg></div>-->
+ 
+      </div>        
+      </footer>
+  </body>
